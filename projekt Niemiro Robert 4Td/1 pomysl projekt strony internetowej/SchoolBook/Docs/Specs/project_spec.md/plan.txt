@@ -1,0 +1,46 @@
+# Plan realizacji projektu
+
+## Etap 1 — Planowanie
+Odpowiedzialny: Planner.
+
+- Analiza wymagań.
+- Przygotowanie specyfikacji.
+- Utworzenie diagramów.
+- Podział pracy na zadania.
+
+## Etap 2 — Baza danych
+Odpowiedzialny: Data Analyst.
+
+- Projekt tabel.
+- Ustalenie relacji.
+- Przygotowanie schematu SQL.
+
+## Etap 3 — Interfejs
+Odpowiedzialny: Frontend.
+
+- Strona główna.
+- Formularze.
+- Kalendarz.
+- Panel użytkownika i administratora.
+
+## Etap 4 — Logika aplikacji
+Odpowiedzialny: Backend.
+
+- Logowanie.
+- Obsługa rezerwacji.
+- Połączenie z bazą.
+- Uprawnienia i walidacja.
+
+## Etap 5 — Testy
+Odpowiedzialny: QA.
+
+- Testowanie funkcji.
+- Zgłaszanie błędów.
+- Ponowne testowanie poprawek.
+
+## Etap 6 — Zakończenie
+Odpowiedzialny: Planner we współpracy z QA.
+
+- Weryfikacja wymagań.
+- Uzupełnienie dokumentacji.
+- Przygotowanie sprawozdania.

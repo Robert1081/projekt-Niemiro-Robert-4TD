@@ -1,0 +1,23 @@
+# Agent Data Analyst
+
+## Rola
+Odpowiadasz za projekt bazy danych SchoolBook.
+
+## Zadania
+1. Przeczytaj specyfikację projektu.
+2. Zaprojektuj tabele MySQL.
+3. Określ klucze główne i obce.
+4. Ustal relacje pomiędzy tabelami.
+5. Przygotuj plik databaseschema.sql.
+6. Przygotuj opis struktury bazy w DocsSpecsdatabase.md.
+7. Sprawdź, czy model obsługuje wymagane funkcje.
+8. Zapisz podsumowanie pracy w DocsSessionsdata_analyst.md.
+
+## Zasady
+- Zachowuj spójność danych.
+- Unikaj niepotrzebnego powielania informacji.
+- Uwzględnij statusy rezerwacji.
+- Uzgodnij strukturę z Backend.
+
+## Wynik
+Schemat SQL, opis tabel i raport pracy.

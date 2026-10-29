@@ -1,0 +1,262 @@
+# SchoolBook — opis projektu
+
+## 1. Czym jest projekt?
+
+SchoolBook to projekt obejmujący workspace agentów sztucznej inteligencji oraz aplikację internetową do rezerwacji sal i sprzętu szkolnego.
+
+Projekt ma dwa główne elementy:
+1. **Workspace AI** — system koordynujący pracę agentów AI, przydzielający im zadania, zbierający wyniki i kontrolujący postęp.
+2. **SchoolBook** — aplikacja internetowa tworzona przez agentów, umożliwiająca zarządzanie rezerwacjami sal i sprzętu szkolnego.
+
+Celem projektu jest wykorzystanie orkiestracji agentów AI do zaplanowania, zaprogramowania, przetestowania i udokumentowania aplikacji internetowej.
+
+## 2. Problem, który rozwiązuje SchoolBook
+
+W szkole może występować problem z organizacją dostępu do sal, pracowni komputerowych, projektorów i innych zasobów. SchoolBook ma umożliwiać sprawdzanie dostępności zasobów oraz zarządzanie rezerwacjami w jednym miejscu.
+
+Przykład działania: nauczyciel chce zarezerwować pracownię komputerową na konkretną godzinę. Loguje się do aplikacji, sprawdza dostępność sali, wybiera termin i wysyła zgłoszenie. Administrator może zatwierdzić lub odrzucić rezerwację.
+
+## 3. Funkcje aplikacji SchoolBook
+
+### 3.1. Konta użytkowników
+- Rejestracja i logowanie.
+- Wylogowanie.
+- Rozróżnienie użytkowników i administratorów.
+- Bezpieczne przechowywanie haseł.
+- Kontrola uprawnień do poszczególnych funkcji.
+
+### 3.2. Zarządzanie salami
+- Wyświetlanie listy sal.
+- Informacje o numerze, nazwie i pojemności sali.
+- Opis wyposażenia.
+- Informacja o dostępności.
+- Dodawanie, edytowanie i usuwanie sal przez administratora.
+
+### 3.3. Zarządzanie sprzętem
+- Lista dostępnego sprzętu szkolnego.
+- Informacje o nazwie, liczbie sztuk i stanie sprzętu.
+- Możliwość przypisania sprzętu do rezerwacji.
+- Zarządzanie sprzętem przez administratora.
+
+Przykładowy sprzęt: laptopy, projektory, zestawy komputerowe i inne urządzenia wykorzystywane podczas zajęć.
+
+### 3.4. Rezerwacje
+- Wybór sali lub sprzętu.
+- Wybór daty i godzin rozpoczęcia oraz zakończenia.
+- Dodanie celu rezerwacji.
+- Wysłanie zgłoszenia.
+- Wyświetlanie statusu rezerwacji.
+- Anulowanie własnej rezerwacji zgodnie z ustalonymi zasadami.
+- Zatwierdzanie i odrzucanie zgłoszeń przez administratora.
+- Blokowanie nakładających się rezerwacji tego samego zasobu.
+
+### 3.5. Kalendarz
+- Widok rezerwacji w kalendarzu.
+- Sprawdzanie wolnych i zajętych terminów.
+- Filtrowanie według sali, sprzętu i daty.
+- Prezentowanie statusów rezerwacji.
+
+### 3.6. Panel użytkownika
+- Podgląd własnych rezerwacji.
+- Sprawdzanie statusu zgłoszeń.
+- Przeglądanie historii.
+- Anulowanie dozwolonych rezerwacji.
+
+### 3.7. Panel administratora
+- Zarządzanie użytkownikami.
+- Zarządzanie salami i sprzętem.
+- Przeglądanie wszystkich rezerwacji.
+- Zatwierdzanie i odrzucanie zgłoszeń.
+- Przeglądanie historii operacji związanych z rezerwacjami.
+
+## 4. Technologie
+
+### Aplikacja SchoolBook
+- HTML5 — struktura stron.
+- CSS3 — wygląd i układ interfejsu.
+- JavaScript — interaktywność.
+- PHP — logika aplikacji i obsługa żądań.
+- MySQL — przechowywanie danych.
+- XAMPP — lokalne środowisko do uruchamiania i testowania aplikacji.
+
+### Workspace agentów AI
+- Python — logika orkiestratora.
+- API modelu AI — uruchamianie agentów i generowanie wyników.
+- JSON — przekazywanie danych pomiędzy etapami.
+- Markdown — instrukcje i dokumentacja.
+- Mermaid — diagramy.
+- Git i GitHub — kontrola wersji oraz przechowywanie projektu.
+
+## 5. Workspace agentów AI
+
+Workspace ma koordynować pracę wyspecjalizowanych agentów. Każdy agent otrzymuje określoną rolę, instrukcję, zadanie i dostęp do odpowiedniej dokumentacji.
+
+### 5.1. Planner — planowanie
+Odpowiada za analizę pomysłu i organizację całego projektu.
+
+Zadania:
+- analiza wymagań;
+- zadawanie pytań dotyczących brakujących informacji;
+- przygotowanie specyfikacji;
+- tworzenie diagramów Mermaid;
+- podział pracy na zadania;
+- ustalanie zależności pomiędzy zadaniami;
+- przekazywanie pozostałym agentom informacji o wymaganiach.
+
+Planner powinien działać jako pierwszy. Na początkowym etapie workspace uruchamia tylko Plannera, aby sprawdzić poprawność generowania dokumentacji.
+
+### 5.2. Frontend — interfejs użytkownika
+Odpowiada za wygląd i obsługę stron.
+
+Zadania:
+- przygotowanie strony głównej;
+- formularze logowania;
+- lista sal i sprzętu;
+- kalendarz rezerwacji;
+- formularze rezerwacyjne;
+- panel użytkownika;
+- panel administratora;
+- dostosowanie interfejsu do różnych rozmiarów ekranu.
+
+### 5.3. Backend — logika aplikacji
+Odpowiada za działanie aplikacji po stronie serwera.
+
+Zadania:
+- implementacja kodu PHP;
+- obsługa kont i sesji;
+- kontrola uprawnień;
+- obsługa rezerwacji;
+- walidacja danych;
+- komunikacja z bazą MySQL;
+- ochrona przed nieuprawnionym dostępem.
+
+### 5.4. Data Analyst — projektowanie danych
+Odpowiada za strukturę bazy danych.
+
+Zadania:
+- projektowanie tabel;
+- ustalanie relacji;
+- tworzenie kluczy głównych i obcych;
+- przygotowanie pliku SQL;
+- sprawdzanie spójności danych;
+- współpraca z Backendem w zakresie struktury bazy.
+
+### 5.5. QA — kontrola jakości
+Odpowiada za testowanie aplikacji i weryfikację rezultatów.
+
+Zadania:
+- przygotowanie przypadków testowych;
+- sprawdzanie logowania;
+- testowanie rezerwacji;
+- sprawdzanie uprawnień;
+- wykrywanie konfliktów terminów;
+- zapisywanie błędów;
+- przekazywanie błędów do odpowiednich agentów;
+- ponowne testowanie poprawek;
+- przygotowanie raportu końcowego.
+
+## 6. Jak agenci będą współpracować?
+
+1. Użytkownik wpisuje opis projektu lub polecenie.
+2. Orkiestrator przekazuje zadanie Plannerowi.
+3. Planner tworzy specyfikację, diagramy i plan realizacji.
+4. Użytkownik może zatwierdzić plan przed rozpoczęciem implementacji.
+5. Data Analyst projektuje bazę danych.
+6. Frontend i Backend realizują zadania na podstawie wspólnej specyfikacji.
+7. Orkiestrator zbiera wyniki i koordynuje integrację.
+8. QA testuje gotową funkcjonalność.
+9. W razie błędów odpowiedni agent otrzymuje zadanie poprawkowe.
+10. QA ponawia testy.
+11. Po pomyślnym zakończeniu testów generowane jest sprawozdanie końcowe.
+
+Agenci powinni pracować na podstawie wspólnej specyfikacji. Nie mogą samodzielnie zmieniać zatwierdzonych wymagań bez uzgodnienia.
+
+## 7. Funkcje samego workspace
+
+Workspace powinien docelowo oferować:
+- możliwość wpisania polecenia dla agentów;
+- uruchamianie Plannera;
+- uruchamianie kolejnych agentów według planu;
+- listę agentów i ich statusów;
+- przydzielanie zadań;
+- przekazywanie wyników między agentami;
+- historię uruchomień;
+- zapisywanie raportów sesji;
+- podgląd specyfikacji i diagramów;
+- wykrywanie błędów wykonania;
+- ponawianie nieudanych zadań;
+- zatwierdzanie planu przed implementacją;
+- informowanie o zakończeniu projektu.
+
+Pliki z instrukcjami agentów opisują ich role, natomiast za rzeczywiste wywoływanie modeli AI, przekazywanie kontekstu i zapisywanie wyników odpowiada orkiestrator.
+
+## 8. Dokumentacja projektu
+
+Dokumentacja będzie przechowywana w katalogu `Docs`.
+
+- `Docs/Specs/` — specyfikacja funkcjonalna i techniczna.
+- `Docs/Sessions/` — podsumowania rzeczywiście wykonanej pracy agentów.
+- `Docs/diagrams/` — diagramy architektury i bazy danych.
+- `Docs/report.md` — sprawozdanie końcowe.
+
+Każdy agent powinien zapisywać:
+- otrzymane zadanie;
+- wykonane czynności;
+- utworzone i zmienione pliki;
+- napotkane problemy;
+- status wykonania;
+- zalecane następne kroki.
+
+Raporty muszą przedstawiać faktyczny przebieg pracy, a nie wymyślone wyniki.
+
+## 9. Kolejność realizacji
+
+### Etap 1 — przygotowanie projektu
+Utworzenie repozytorium GitHub, katalogów i podstawowej dokumentacji.
+
+### Etap 2 — Planner
+Przygotowanie instrukcji Plannera i uruchamianie go przez orkiestrator. Sprawdzenie generowania specyfikacji, diagramów i raportu sesji.
+
+### Etap 3 — projekt bazy danych
+Dodanie Data Analysta oraz przygotowanie schematu MySQL.
+
+### Etap 4 — implementacja
+Dodanie Frontendu i Backendu, a następnie połączenie ich rezultatów.
+
+### Etap 5 — integracja workspace
+Rozbudowa orkiestratora o przydzielanie zadań, przekazywanie wyników i zapisywanie statusów.
+
+### Etap 6 — testy
+Dodanie QA, testowanie funkcjonalności i poprawianie wykrytych błędów.
+
+### Etap 7 — zakończenie
+Przygotowanie README, dokumentacji technicznej i sprawozdania końcowego.
+
+## 10. Bezpieczeństwo i jakość
+
+- Hasła użytkowników muszą być przechowywane w postaci bezpiecznych skrótów.
+- Dostęp do funkcji administratora musi być kontrolowany po stronie serwera.
+- Zapytania do MySQL powinny korzystać z przygotowanych zapytań PDO.
+- Dane z formularzy muszą być walidowane.
+- Klucze API i hasła nie mogą być umieszczane w publicznym repozytorium.
+- Agenci powinni mieć jasno określony zakres odpowiedzialności.
+- Zmiany muszą być sprawdzane pod kątem zgodności ze specyfikacją.
+- QA nie może oznaczać testów jako zaliczonych bez ich wykonania.
+
+## 11. Kryteria ukończenia
+
+Projekt można uznać za ukończony, gdy:
+1. Workspace uruchamia agentów i przekazuje im zadania.
+2. Planner generuje dokumentację oraz plan pracy.
+3. Pozostali agenci realizują swoje zadania zgodnie z podziałem obowiązków.
+4. SchoolBook umożliwia logowanie, przeglądanie zasobów i zarządzanie rezerwacjami.
+5. Aplikacja korzysta z bazy MySQL.
+6. QA przeprowadza testy i dokumentuje ich wyniki.
+7. Dokumentacja i raport końcowy są kompletne.
+8. Repozytorium GitHub zawiera kod oraz instrukcję uruchomienia.
+
+## 12. Oczekiwany rezultat
+
+Rezultatem będzie repozytorium GitHub zawierające działający workspace agentów AI, orkiestrator, instrukcje agentów, dokumentację, diagramy, raporty sesji, testy oraz aplikację SchoolBook w PHP i MySQL.
+
+Projekt ma pokazać nie tylko tworzenie aplikacji internetowej, ale również planowanie, podział zadań, współpracę agentów, kontrolę jakości i dokumentowanie procesu wytwarzania oprogramowania.

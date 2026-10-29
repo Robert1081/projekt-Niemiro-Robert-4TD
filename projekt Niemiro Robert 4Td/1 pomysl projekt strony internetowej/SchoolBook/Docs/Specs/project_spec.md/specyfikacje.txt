@@ -1,0 +1,61 @@
+# SchoolBook — specyfikacja projektu
+
+## 1. Opis projektu
+
+SchoolBook to aplikacja internetowa służąca do rezerwowania sal i sprzętu szkolnego. Umożliwia użytkownikom sprawdzanie dostępności zasobów, wybieranie terminów i wysyłanie zgłoszeń rezerwacyjnych.
+
+## 2. Cel aplikacji
+
+Celem jest ułatwienie zarządzania salami lekcyjnymi i sprzętem oraz zapobieganie konfliktom terminów rezerwacji.
+
+## 3. Użytkownicy
+
+- Użytkownik — przegląda sale i sprzęt, tworzy rezerwacje i zarządza swoimi zgłoszeniami.
+- Administrator — zarządza salami, sprzętem, kontami i wszystkimi rezerwacjami.
+
+## 4. Funkcje aplikacji
+
+1. Rejestracja i logowanie.
+2. Wyświetlanie listy sal.
+3. Wyświetlanie listy sprzętu.
+4. Sprawdzanie dostępności zasobów.
+5. Tworzenie i anulowanie rezerwacji.
+6. Wyświetlanie własnych rezerwacji.
+7. Zatwierdzanie i odrzucanie rezerwacji przez administratora.
+8. Zarządzanie salami i sprzętem.
+9. Historia rezerwacji.
+
+## 5. Technologie
+
+- HTML5
+- CSS3
+- JavaScript
+- PHP
+- MySQL
+- XAMPP
+- Python do obsługi orkiestracji agentów AI
+- Git i GitHub
+- Mermaid do diagramów
+
+## 6. Baza danych
+
+Planowane tabele:
+
+- users — użytkownicy i ich role.
+- rooms — sale szkolne.
+- equipment — sprzęt szkolny.
+- reservations — rezerwacje i ich statusy.
+- reservation_equipment — powiązanie rezerwacji ze sprzętem.
+
+## 7. Wymagania
+
+- Użytkownik musi być zalogowany, aby dokonać rezerwacji.
+- System nie może pozwalać na nakładające się rezerwacje tego samego zasobu.
+- Administrator ma dostęp do funkcji zarządzania.
+- Hasła muszą być bezpiecznie przechowywane.
+- Dane formularzy muszą być walidowane.
+- Aplikacja musi współpracować z bazą MySQL.
+
+## 8. Kryteria ukończenia
+
+Projekt jest ukończony, gdy aplikacja działa, podstawowe funkcje przechodzą testy, a dokumentacja i instrukcja uruchomienia są gotowe.

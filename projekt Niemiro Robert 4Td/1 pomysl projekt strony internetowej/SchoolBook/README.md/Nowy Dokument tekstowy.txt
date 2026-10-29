@@ -1,0 +1,26 @@
+# SchoolBook — workspace agentów AI
+
+## Opis
+Projekt obejmuje workspace orkiestrujący agentów AI oraz aplikację internetową SchoolBook do rezerwacji sal i sprzętu szkolnego.
+
+## Agenci
+- Planner — planowanie i specyfikacja.
+- Frontend — interfejs użytkownika.
+- Backend — logika PHP.
+- Data Analyst — baza MySQL.
+- QA — testowanie.
+
+## Technologie
+PHP, MySQL, HTML5, CSS3, JavaScript, Python, Mermaid i Git.
+
+## Dokumentacja
+- Docs/Specs/ — specyfikacja i plan.
+- Docs/Sessions/ — raporty agentów.
+- Docs/diagrams/ — diagramy.
+- Docs/report.md — sprawozdanie końcowe.
+
+## Status
+Projekt w trakcie realizacji.
+
+## Uruchomienie
+Instrukcja uruchomienia zostanie uzupełniona po przygotowaniu orkiestratora i aplikacji.
